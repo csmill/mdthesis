@@ -1,0 +1,48 @@
+project:
+  type: book
+
+book:
+  title: "PhD Thesis Title"
+  author: "Author Name"
+  date: "Date"
+  downloads: [pdf,epub]
+  chapters:
+    - index.qmd
+    - ./text/litreview.qmd
+    - ./text/methods.qmd
+    - ./text/workchapter-1.qmd
+    - ./text/workchapter-2.qmd
+    - ./text/workchapter-3.qmd
+    - ./text/conclusions.qmd
+    - ./text/references.qmd
+  appendices: 
+      - ./text/appendix-1.qmd
+
+toc-title: "Table of Contents"
+
+bibliography: bibliography.bib
+
+format:
+  html:
+    theme: spacelab
+  pdf:
+    documentclass: book
+    template-partials:
+      - before-body.tex
+    include-in-header: 
+      text: |
+        \usepackage{makeidx}
+        \makeindex
+    include-after-body: 
+      text: |
+        \printindex
+    toc: true
+    lof: true
+    lot: true
+  docx: default
+execute:
+  echo: false
+  freeze: auto
+
+
+

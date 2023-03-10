@@ -1,0 +1,24 @@
+# First Work Chapter
+
+Content goes here.
+
+## A Plot
+
+*Python code can be used to produce plots that will be included in the output.*
+
+```{python}
+#| label: fig-sampleplot
+#| fig-cap: A sample plot
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(0,10,1000)
+y = np.sin(x)
+
+fig,ax = plt.subplots(1,1,figsize=(6,6))
+ax.plot(x,y)
+ax.set_xlabel("Time")
+ax.set_ylabel("Amplitude")
+plt.show()
+```

@@ -1,0 +1,9 @@
+# Introduction
+
+## A Thesis Written in Markdown
+
+This software stack allows writing a thesis in markdown, with Python code for creating figures included in the source text.
+
+## Why?
+
+Markdown uses a more human-friendly syntax than LaTeX, but it is more constrained that a docx file.
