@@ -11,7 +11,7 @@ Download the files from this repository, and from a terminal working in that dir
 quarto render
 ```
 
-By default, this will output an html web site, a PDF, and a docx file.
+By default, this will output an html web site, a PDF, and a docx file in the `./_book/` folder.
 
 ## Customizing
 Project settings are included in `./_quarto.yml`. Here you can change the title, author, date, and output format options.
